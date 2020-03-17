@@ -3,16 +3,22 @@ import React, {useState, useEffect} from "react";
 const App = () => {
     const [count, setCount] = useState(0);
     const [isOn, setIsOn] = useState(false);
-    const [mousePosition, setMousePosition] = useState({x: null, y: null})
+    const [mousePosition, setMousePosition] = useState({x: null, y: null});
+    const [onlineStatus, setOnlineStatus] = useState(navigator.onLine);
 
     //effect function is called after every re-render (or after a state change that causes a re-render)
     useEffect(() => {
         document.title = `You have clicked ${count} times`;
-        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener("mousemove", handleMouseMove);
+        window.addEventListener("online", handleOnline);
+        window.addEventListener("online", handleOffline);
 
-        //this cleanup function goes at the end of Use Effect function... this is performed when component unmounts or before effect runs
+
+            //this cleanup function goes at the end of Use Effect function... this is performed when component unmounts or before effect runs
         return () => {
-            window.removeEventListener('mousemove', handleMouseMove)
+            window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener("online", handleOnline);
+            window.removeEventListener("online", handleOffline);
         }
     },
         //this is if we want to prevent the useEffect from running on every render (only if the value changes as specified below will the side effect be run again
@@ -24,6 +30,14 @@ const App = () => {
             x: event.pageX,
             y: event.pageY
         })
+    };
+
+    const handleOnline = event => {
+        setOnlineStatus(true);
+    };
+
+    const handleOffline = event => {
+        setOnlineStatus(false);
     };
 
     const incrementCount = () => {
@@ -58,6 +72,11 @@ const App = () => {
             <h2>Current Mouse Position</h2>
             {JSON.stringify(mousePosition, null, 2)}
             <br />
+
+            <h2>Online Status</h2>
+            <p>You are <strong>{onlineStatus ? "online" : "offline"}</strong></p>
+
+
 
         </>
     )
