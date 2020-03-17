@@ -4,7 +4,6 @@
     <list default="true" id="7120fe12-6983-4bae-8c9c-8d416f51e5db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppFunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583262162971</updated>
-      <workItem from="1583262166404" duration="5397000" />
+      <workItem from="1583262166404" duration="5518000" />
+      <workItem from="1584467875044" duration="1070000" />
     </task>
     <servers />
   </component>
@@ -53,9 +53,10 @@
       <screen x="0" y="23" width="1792" height="1028" />
     </state>
     <state x="1268" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1583262812056" />
-    <state x="573" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1583262168235">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="573" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1584467877971">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state x="573" y="361" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1584467877971" />
     <state x="573" y="365" key="com.intellij.ide.util.TipDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1583262168235" />
     <state x="273" y="182" key="new project wizard" timestamp="1583449087296">
       <screen x="0" y="0" width="1792" height="1120" />
